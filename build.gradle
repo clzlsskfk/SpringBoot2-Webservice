@@ -1,0 +1,35 @@
+buildscript {
+    ext {
+        springBootVersion = '2.1.7.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+ //       jcenter() //현재는 쓰지 않는다. JFrog에서 운영하는 artifact repository인데 22년 1월 까지만 다운로드 지원하여 이젠 이용 불가하다고 한다.
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management' //스프링부트의 의존성들을 관리해주는 플러그인이라 꼭 추가해야함.
+
+group 'com.Achi.book'
+version '1.0-SNAPSHOT'
+//책 내용 sourceCompatibility = 1.8 요건 뭐???
+
+repositories {
+    mavenCentral()
+//    jcenter()
+}
+
+dependencies {
+    //책에서는 compile()을 사용하였으나. 에러가 났다.
+    // compile() 이라는 검색어로 찾아보니
+    // compile()을 implemention 으로
+    // testcompile() -> testImplementation 로 교체하면 된다는 내용을 보고 해보았더니 오류는 사라졌다. 이제 되는걸까??
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
