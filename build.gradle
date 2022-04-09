@@ -1,3 +1,5 @@
+// gradle이란.. 빌드도구로써 라이브러리를 가져오고 빌드하는 것까지 관리하는 것. (빌드자동화)
+
 buildscript {
     ext {
         springBootVersion = '2.1.7.RELEASE'
@@ -16,6 +18,14 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management' //스프링부트의 의존성들을 관리해주는 플러그인이라 꼭 추가해야함.
 
+// 최근에는 이런식으로 작성한다고 한다.
+//plugins{
+//    id 'java'
+//    id 'eclipse'
+//    id 'org.springframework.boot'
+//    id 'io.spring.dependency-management'
+//}
+
 group 'com.Achi.book'
 version '1.0-SNAPSHOT'
 //책 내용 sourceCompatibility = 1.8 요건 뭐???
@@ -32,4 +42,8 @@ dependencies {
     // testcompile() -> testImplementation 로 교체하면 된다는 내용을 보고 해보았더니 오류는 사라졌다. 이제 되는걸까??
     implementation('org.springframework.boot:spring-boot-starter-web')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+
+    //implementation('org.projectlombok:lombok')        //gradle 5.x 이하버전
+    compileOnly 'org.projectlombok:lombok'              //gradle 5.x 이상버전
+    annotationProcessor 'org.projectlombok:lombok'      //gradle 5.x 이상버전
 }
