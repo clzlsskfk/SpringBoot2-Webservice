@@ -1,6 +1,7 @@
-package com.achi.book.springboot.Web.dto;
+package com.achi.book.springboot.web.dto;
 
 
+//import com.achi.book.springboot.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,7 @@
-package com.achi.book.springboot.Web;
+package com.achi.book.springboot.web;
 
 
-//import com.achi.book.springboot.Web.dto.PostsSaveRequestDto;
+//import com.achi.book.springboot.web.dto.PostsSaveRequestDto;
 //import com.achi.book.springboot.service.posts.PostsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
