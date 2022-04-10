@@ -41,9 +41,14 @@ dependencies {
     // compile()을 implemention 으로
     // testcompile() -> testImplementation 로 교체하면 된다는 내용을 보고 해보았더니 오류는 사라졌다. 이제 되는걸까??
     implementation('org.springframework.boot:spring-boot-starter-web')
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
 
     //implementation('org.projectlombok:lombok')        //gradle 5.x 이하버전
     compileOnly 'org.projectlombok:lombok'              //gradle 5.x 이상버전
     annotationProcessor 'org.projectlombok:lombok'      //gradle 5.x 이상버전
+
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('com.h2database:h2')
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+
 }
