@@ -10,7 +10,7 @@ public class HelloController {
 
     @GetMapping("/hello")       // 2
     public String hello() {
-        return "hello";
+        return "뭐지??";
     }
 
     //1     @RequestParam
