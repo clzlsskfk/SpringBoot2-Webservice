@@ -2,4 +2,6 @@
 /.gradle/
 /.idea/
 
+application-oauth.properties
+
 // 책의 내용을 따라하기 전에 이미 gitignore는 만들어져 있었다. 이 부분도 업데이트가 진행되었나??
