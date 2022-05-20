@@ -16,7 +16,7 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
-#script: "./gradlew clean build"
+script: "./gradlew clean build"
 #
 #before_deploy:
 #  - zip -r freelec-springboot2-webservice *
@@ -34,7 +34,7 @@ cache:
 #    local_dir: deploy # before_deploy에서 생성한 디렉토리
 #    wait-until-deployed: true
 
-  $ CI 실행 완료 시 메일로 알람
+# CI 실행 완료 시 메일로 알람
 notifications:
   email:
     recipients:
