@@ -53,4 +53,5 @@ notifications:
       - clzlscjsrnr@gmail.com
 
 
-# 여기서 몇번을 해메는지 모르겠다....
+# 9-4 CodeDeploy 생성에서 몇번을 해메는지 모르겠다....
+# 결론은 AWS CodeDeploy 생성과정에서 지역 선택을 북부 버지니아(기본값)으로 해놔버려서 다시 서울로 잡아서 확인한다.
