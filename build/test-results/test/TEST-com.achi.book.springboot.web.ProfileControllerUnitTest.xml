@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.achi.book.springboot.web.ProfileControllerUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-28T03:28:16" hostname="inangdoui-MacBookPro.local" time="0.111">
+  <properties/>
+  <testcase name="active_profile이_없으면_default가_조회된다" classname="com.achi.book.springboot.web.ProfileControllerUnitTest" time="0.111"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
