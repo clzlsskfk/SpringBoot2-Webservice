@@ -37,3 +37,5 @@ nohup java -jar \
     -Dspring.config.location=classpath:/application.properties,classpath:/application-real.properties,/home/ec2-user/app/application-oauth.properties,/home/ec2-user/app/application-real-db.properties \
     -Dspring.profiles.active=real \
     $JAR_NAME > $REPOSITORY/nohup.out 2>&1 &
+
+# 헤딩 deploy.sh 는 step2에 들어있고 이 코드디플로이를 사용하기를 원한다면 chmod +x codedeploy.sh 를 임력해주면 수동으로 실행을 할 수 있다.
