@@ -37,3 +37,6 @@ do
   echo "> Health check 연결 실패. 재시도..."
   sleep 10
 done
+
+# if 구문에 [] 사이 변수를 ""로 감싸주어야 EC2에서 실행 시 에러가 나지 않는다..
+# 구문을 감싸지 않았다면 ./health.sh: line 20: [: : integer expression expected 이런 에러가 날 것이다.
